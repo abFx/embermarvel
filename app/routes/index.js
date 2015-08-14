@@ -8,7 +8,7 @@ export default Ember.Route.extend({
     });
   },
   model: function(params){
-    return Ember.$.get("http://gateway.marvel.com/v1/public/characters?limit=30&apikey=99d7fa0a888391fb9ea7fcaf0c7e05d2").then(function(response){
+    return Ember.$.get("https://gateway.marvel.com/v1/public/characters?limit=30&apikey=99d7fa0a888391fb9ea7fcaf0c7e05d2").then(function(response){
       return response.data;
     });
   }
